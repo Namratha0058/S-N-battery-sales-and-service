@@ -119,6 +119,56 @@ body {
             text-align: center;
             color: #333; /* Dark text for headers */
         }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+}
+
+.nav-item {
+    margin: 0; /* Remove margin to avoid gaps */
+}
+
+.nav-link {
+    padding: 15px;
+    text-align: center;
+    display: block; /* Make the link fill the nav item */
+}
+
+@media (min-width: 600px) {
+    .nav-items {
+        flex-direction: row; /* Change to row on larger screens */
+    }
+
+    .nav-item {
+        margin-right: 20px; /* Add space between items */
+    }
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
 /* Container for the image row */
 .image-row {
     display: flex;
